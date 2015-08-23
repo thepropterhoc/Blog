@@ -1,0 +1,30 @@
+extends layout.jade
+
+block content
+  head
+    // Custom styles for this template
+    link(href='stylesheets/entry.css', rel='stylesheet')
+    link(href='stylesheets/valley.css', rel='stylesheet')
+  body(data-spy='scroll', data-offset='0', data-target='#theMenu')
+  // Menu
+  nav#theMenu.menu
+    .menu-wrap
+      
+    #menuToggle
+      a(href='/')
+        img(src='/images/back.png')
+  // ========== HEADER SECTION ==========
+  section#home(name='home')
+  #headerwrap
+    .container
+      br
+      br
+      br
+      .row
+        h1 VALLEY
+        br
+        h3 When several zipcodes lead the country
+        br
+        .col-lg-6.col-lg-offset-3
+    // /container
+  // /headerwrap

@@ -1,0 +1,146 @@
+extends layout.jade
+
+
+block content
+  head
+    // Custom styles for this template
+    link(href='stylesheets/main.css', rel='stylesheet')
+  body(data-spy='scroll', data-offset='0', data-target='#theMenu')
+  // Menu
+  nav#theMenu.menu
+    .menu-wrap
+      h1.logo
+        a(href='/') go places
+      i.icon-remove.menu-close
+      a.smoothScroll(href='#home') Home
+      a.smoothScroll(href='#about') About
+      a.smoothScroll(href='#gripes') Gripes
+      a.smoothScroll(href='#thoughts') Thoughts
+      a.smoothScroll(href='#builds') 'Please build this'
+      a.smoothScroll(href='#contact') Contact
+      a(href='#')
+        i.icon-facebook
+      a(href='#')
+        i.icon-twitter
+      a(href='#')
+        i.icon-envelope
+    // Menu button
+    #menuToggle
+      i.icon-reorder
+  // ========== HEADER SECTION ==========
+  section#home(name='home')
+  #headerwrap.img(src='./images/background.png')
+    .container
+      //.logo
+        //img(src='images/logo.png')
+      br
+      br
+      br
+      .row
+        h1 THERE AND BACK AGAIN
+        br
+        h3 On code, silicon, and six months
+        br
+        //br
+        .col-lg-6.col-lg-offset-3
+    // /container
+  // /headerwrap
+  // ========== ABOUT SECTION ==========
+  section#about(name='about')
+  #f
+    .container
+      .row
+        h3 WHAT IS THIS THING
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+        // INTRO INFORMATIO
+        .col-lg-6.col-lg-offset-3
+          p
+            | I'm a programmer spending six months in Silicon Valley. 
+          p
+            | Unfortunately, I also like to write about experiences.  
+          p 
+            | Originally from Oklahoma, it's been quite a ride. 
+          p
+            |I hope you'll find some interesting things here. 
+    // /container
+  // /f
+  // ========== GRIPES SECTION ==========
+  section#gripes(name='gripes')
+  #f
+    .container
+      .row.centered
+        h3 GRIPES
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+        p.centered
+          p Surprisingly, none
+        // col-lg-8
+      // row
+    // container
+  // f
+  // ========== THOUGHTS SECTION ==========
+  section#thoughts(name='thoughts')
+  #f
+    .container
+      .row
+        h3 THOUGHTS
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+      .row
+        .col-sm-6.col-md-4
+          #valley.thumbnail
+            img(src='/images/golden.png')
+            .caption
+              a.h3(href='/valley') Valley
+              p
+                | When several zipcodes lead the country.
+        .col-sm-6.col-md-4
+          #cupertino.thumbnail
+            img(src='/images/map.png')
+            .caption
+              a.h3(href='/cupertino') Cupertino
+              p
+                | A city.  With no city.
+    // /container
+  // /f
+  // ========== BUILD THIS SECTION ==========
+  section#builds(name='builds')
+  #f
+    .container
+      .row
+        h3 PLEASE BUILD THIS
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+        p I'll get back to you 
+    // /container
+  // /f
+  // ========== CONTACT SECTION ==========
+  section#contact(name='contact')
+  #f
+    .container
+      .row
+        h3 CONTACT ME
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+        .col-lg-6.col-lg-offset-3
+          a(href='mailto:vanhooser@ou.edu') Email
+  //
+    Bootstrap core JavaScript
+    ==================================================
+  // Placed at the end of the document so the pages load faster
+  script(src='javascripts/classie.js')
+  script(src='javascripts/bootstrap.min.js')
+  script(src='javascripts/smoothscroll.js')
+  script(src='javascripts/main.js')
+

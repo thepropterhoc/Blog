@@ -1,0 +1,49 @@
+extends layout.jade
+
+block content
+  head
+    // Custom styles for this template
+    link(href='stylesheets/entry.css', rel='stylesheet')
+    link(href='stylesheets/cupertino.css', rel='stylesheet')
+  body(data-spy='scroll', data-offset='0', data-target='#theMenu')
+  // Menu
+  nav#theMenu.menu
+    .menu-wrap
+      
+    #menuToggle
+      a(href='/')
+        img(src='/images/back.png')
+  // ========== HEADER SECTION ==========
+  section#home(name='home')
+  #headerwrap
+    .container
+      br
+      br
+      br
+      .row
+        h1 CUPERTINO
+        br
+        h3 A city, without a city
+        br
+        .col-lg-6.col-lg-offset-3
+    // /container
+  // /headerwrap
+  section(name='text')
+  #f
+    .container
+      .row
+        h3 "Where is everybody?"
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+        // INTRO INFORMATIO
+        .col-lg-10.col-lg-offset-1
+          #text
+            p
+              | Just the other day, some fellow interns and I went out for some dinner, and we got to talking in the car about where we're currently living.  Yes, we were talking about the gorgeous and enticing city of Cupertino, California.  
+            br
+            p
+              | It's a strange thing to be driving around a city at 9:00 at night and not see a soul walking out and about.  Perhaps my perspective is skewed having lived in a college town for the past three years, but even so, the other interns with me agreed that it seemed strange for there not to be any kind of community events going on.  
+    // /container
+  // /f
