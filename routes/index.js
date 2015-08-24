@@ -15,5 +15,9 @@ router.get('/cupertino', function(req, res){
 	res.render('cupertino');
 });
 
+router.get('/nature', function(req, res){
+	res.render('nature');
+});
+
 
 module.exports = router;

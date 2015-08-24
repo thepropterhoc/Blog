@@ -15,5 +15,8 @@
 			   window.location.href='/cupertino';
 			});
 
+			$('#nature').click(function(){
+			   window.location.href='/nature';
+			});
 
 })(jQuery)
