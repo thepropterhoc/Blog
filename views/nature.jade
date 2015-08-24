@@ -1,0 +1,46 @@
+extends layout.jade
+
+block content
+  head
+    // Custom styles for this template
+    link(href='stylesheets/entry.css', rel='stylesheet')
+    link(href='stylesheets/nature.css', rel='stylesheet')
+  body(data-spy='scroll', data-offset='0', data-target='#theMenu')
+  // Menu
+  nav#theMenu.menu
+    .menu-wrap
+      
+    #menuToggle
+      a(href='/')
+        img(src='/images/back.png')
+  // ========== HEADER SECTION ==========
+  section#home(name='home')
+  #headerwrap
+    .container
+      br
+      br
+      br
+      .row
+        h1 NATURE
+        br
+        h3 Take a drive on Skyline.
+        br
+        .col-lg-6.col-lg-offset-3
+    // /container
+  // /headerwrap
+  section(name='text')
+  #f
+    .container
+      .row
+        h3 "I smells like natural out here.  I like it."
+        p.centered
+          i.icon.icon-circle
+          i.icon.icon-circle
+          i.icon.icon-circle
+        // INTRO INFORMATIO
+        .col-lg-10.col-lg-offset-1
+          #text
+            p
+              | We should all get out a little more...  
+    // /container
+  // /f
